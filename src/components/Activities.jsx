@@ -5,13 +5,12 @@ import Activity from './Activity'
 
 const Activities = ({ activities }) => {
 
-  //console.log(activities)
   const allActivities = activities.map(activity => <Activity key={activity.id} activity={activity} />)
-  console.log(allActivities)
+  //console.log(allActivities)
 
   return (
     <div>
-      All Activities
+      <h2>All Activities</h2>
       {allActivities}
     </div>
   )

@@ -11,13 +11,14 @@ import { useEffect, useState } from "react";
 const App = () => {
 
   const [activities, setActivities] = useState([]);
+  const url = 'http://localhost:3000/data';
   
   
   useEffect(() => {
-    fetch('http://localhost:3000/data')
+    fetch(url)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      //console.log(data)
       {setActivities(data)}}   
   )}, [])
 

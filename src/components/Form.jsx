@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
 
 const Form = () => {
   return (
-    <div>Form</div>
+    <div>
+      <h2>Add an activity</h2>
+      <form>
+        <label>Name</label>
+        <input type='text' />
+        <input type='submit'/>
+      </form>
+    </div>
+    
+
   )
 }
 
