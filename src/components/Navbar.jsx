@@ -6,7 +6,7 @@ const Navbar = () => {
       <div>
           <NavLink style={{ marginRight: "20px" }} to="/"> Home </NavLink>
           <NavLink style={{ marginRight: "20px" }} to="/activities"> Activities </NavLink>
-          <NavLink style={{ marginRight: "20px" }} to="/activities/new"> Add a new activity! </NavLink>
+          <NavLink style={{ marginRight: "20px" }} to="/activities/new"> Form </NavLink>
       </div>
   )
 }
