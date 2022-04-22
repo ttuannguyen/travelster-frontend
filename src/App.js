@@ -8,13 +8,14 @@ import Form from "./components/Form";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome to Project 2</h1>
+    <Router>
+      <Navbar />
       <Home />
       <Navbar />
       <Activities />
       <Form />
-    </div>
+    </Router>
+
   );
 }
 
