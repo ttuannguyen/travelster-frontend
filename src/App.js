@@ -9,6 +9,7 @@ import Form from "./components/Form";
 const App = () => {
   return (
     <Router>
+      <h1>Phase 2 Project</h1>
       <Navbar />
       <Routes>
         <Route path="/" element={ <Home />} />
