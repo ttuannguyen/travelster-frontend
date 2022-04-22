@@ -6,9 +6,12 @@ import Home from "./Home";
 import Navbar from "./components/Navbar";
 import Activities from "./components/Activities";
 import Form from "./components/Form";
+import { useState } from "react";
 
 const App = () => {
 
+  const [activities, setActivities] = useState([]);
+  
   fetch('http://localhost:3000/data')
   .then(res => res.json())
   .then(json => console.log(json))
