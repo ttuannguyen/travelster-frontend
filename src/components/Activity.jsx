@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Activity = () => {
+const Activity = ({}) => {
   return (
-    <div>Activity</div>
+    <h3>{}</h3>
   )
 }
 

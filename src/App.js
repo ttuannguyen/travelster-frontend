@@ -16,8 +16,10 @@ const App = () => {
   useEffect(() => {
     fetch('http://localhost:3000/data')
     .then(res => res.json())
-    .then(activityData => setActivities(activityData))
-  }, [])
+    .then(data => {
+      console.log(data)
+      {setActivities(data)}}   
+  )}, [])
 
 
   return (
@@ -26,7 +28,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={ <Home />} />
-        <Route exact path="/activities" element={ <Activities />} activities={activities} />
+        <Route exact path="/activities" element={ <Activities activities={activities} />} />
         <Route exact path="/activities/new" element={ <Form />} />
       </Routes>
     </Router>
