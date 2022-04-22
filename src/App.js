@@ -3,15 +3,16 @@
 import Home from "./Home";
 import Navbar from "./components/Navbar";
 import Activities from "./components/Activities";
-import Activity from "./components/Activity";
+import Form from "./components/Form";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>My App</h1>
+      <h1>Welcome to Project 2</h1>
       <Home />
       <Navbar />
       <Activities />
+      <Form />
     </div>
   );
 }
