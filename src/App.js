@@ -10,10 +10,11 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Home />
-      <Navbar />
-      <Activities />
-      <Form />
+      <Routes>
+        <Route path="/" element={ <Home />} />
+        <Route exact path="/activities" element={ <Activities />} />
+        <Route exact path="/activities/new" element={ <Form />} />
+      </Routes>
     </Router>
 
   );
