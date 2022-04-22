@@ -1,9 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+      <div>
+          <NavLink style={{ marginRight: "20px" }} to="/"> Home </NavLink>
+          <NavLink style={{ marginRight: "20px" }} to="/activities"> Activities </NavLink>
+          <NavLink style={{ marginRight: "20px" }} to="/activities/new"> Add a new activity! </NavLink>
+      </div>
   )
 }
 
