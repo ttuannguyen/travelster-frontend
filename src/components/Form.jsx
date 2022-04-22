@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Form = () => {
 
+  const [activity, setActivity] = useState('');
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e)
-
   }
+
+  const url = 'http://localhost:3000/data';
+
+
+
+
 
   return (
     <div>
