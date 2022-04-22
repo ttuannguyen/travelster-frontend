@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Activities = () => {
+const Activities = ({ activities }) => {
+
+  console.log(activities)
   return (
     <div>Activities</div>
   )

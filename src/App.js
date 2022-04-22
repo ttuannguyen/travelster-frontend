@@ -6,15 +6,19 @@ import Home from "./Home";
 import Navbar from "./components/Navbar";
 import Activities from "./components/Activities";
 import Form from "./components/Form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const App = () => {
 
   const [activities, setActivities] = useState([]);
   
-  fetch('http://localhost:3000/data')
-  .then(res => res.json())
-  .then(json => console.log(json))
+  
+  useEffect(() => {
+    fetch('http://localhost:3000/data')
+    .then(res => res.json())
+    .then(activityData => setActivities(activityData))
+  }, [])
+
 
   return (
     <Router>
@@ -22,7 +26,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={ <Home />} />
-        <Route exact path="/activities" element={ <Activities />} />
+        <Route exact path="/activities" element={ <Activities />} activities={activities} />
         <Route exact path="/activities/new" element={ <Form />} />
       </Routes>
     </Router>
