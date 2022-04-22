@@ -1,23 +1,22 @@
 {
-    "data": [
-      {
-        "name": "night out in Zona Rosa",
-        "trip": "Spring Break 2022",
-        "likes": 1,
-        "id": 1
-      },
-      {
-        "name": "walk around Historical District",
-        "trip": "Spring Break 2022",
-        "likes": 1,
-        "id": 2
-      },
-      {
-        "name": "attend the Mezcal Tasting Tour",
-        "trip": "Spring Break 2022",
-        "likes": 1,
-        "id": 3
-      }
-    ]
-  }
-  
+  "data": [
+    {
+      "name": "night out in Zona Rosa",
+      "trip": "Spring Break 2022",
+      "likes": 1,
+      "id": 1
+    },
+    {
+      "name": "walk around Historical District",
+      "trip": "Spring Break 2022",
+      "likes": 1,
+      "id": 2
+    },
+    {
+      "name": "attend the Mezcal Tasting Tour",
+      "trip": "Spring Break 2022",
+      "likes": 1,
+      "id": 3
+    }
+  ]
+}
