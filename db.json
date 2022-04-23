@@ -1,30 +1,28 @@
 {
   "data": [
     {
-      "activity": "night out in Zona Rosa",
+      "name": "tour Historical District",
       "trip": "Spring Break 2022",
+      "location": "Centro Histórico, Mexico City",
+      "comment": "stop by Chinatown and the taco stands",
       "likes": 1,
       "id": 1
     },
     {
-      "activity": "walk around Historical District",
+      "name": "attend the mezcal tasting tour",
       "trip": "Spring Break 2022",
+      "location": "Roma Norte, Mexico City",
+      "comment": "contact the host to book the tour",
       "likes": 1,
       "id": 2
     },
     {
-      "activity": "attend the Mezcal Tasting Tour",
+      "name": "night out in Zona Rosa",
       "trip": "Spring Break 2022",
+      "location": "Zona Rosa, Mexico City",
+      "comment": "stop by an ATM to get cash",
       "likes": 1,
       "id": 3
-    },
-    {
-      "activity": "hello",
-      "id": 4
-    },
-    {
-      "activity": "hello",
-      "id": 5
     }
   ]
 }
