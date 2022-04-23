@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Form = () => {
+const Form = ({addActivity}) => {
 
   const url = 'http://localhost:3000/data';
   //const [activity, setActivity] = useState('');

@@ -22,6 +22,10 @@ const App = () => {
       {setActivities(data)}}   
   )}, [])
 
+  const addActivity = (newActivity) => {
+    console.log(newActivity)
+  }
+
 
   return (
     <Router>
@@ -30,7 +34,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={ <Home />} />
         <Route exact path="/activities" element={ <Activities activities={activities} />} />
-        <Route exact path="/activities/new" element={ <Form />} />
+        <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
       </Routes>
     </Router>
 
