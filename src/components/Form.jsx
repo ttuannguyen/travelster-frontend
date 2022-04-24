@@ -30,8 +30,12 @@ const Form = ({addActivity}) => {
     e.preventDefault();
 
     let obj = { 
-      name: e.target.name.value,
+      name,
+      trip,
+      location,
+      comment
     }
+    console.log(obj)
 
     fetch(url, {
       method: 'POST', 
@@ -42,8 +46,8 @@ const Form = ({addActivity}) => {
     })
     .then(res => res.json())
     .then(json => console.log(json))
-    //.then(activity => setActivity(activity))
-
+    console.log(obj)
+    addActivity()
   }
 
 
