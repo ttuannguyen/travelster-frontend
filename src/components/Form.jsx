@@ -33,7 +33,8 @@ const Form = ({addActivity}) => {
       name,
       trip,
       location,
-      comment
+      comment,
+      likes: 1
     }
     console.log(obj)
 
@@ -45,9 +46,10 @@ const Form = ({addActivity}) => {
       body: JSON.stringify(obj),
     })
     .then(res => res.json())
-    .then(json => console.log(json))
-    console.log(obj)
-    addActivity()
+    .then(newActivity => {
+      console.log(newActivity)
+      addActivity(newActivity)
+    })
   }
 
 

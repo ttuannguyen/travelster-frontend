@@ -24,8 +24,8 @@ const App = () => {
 
   const addActivity = (newActivity) => {
     console.log(newActivity)
+    setActivities(activities => [...activities, newActivity])
   }
-
 
   return (
     <Router>
