@@ -57,14 +57,14 @@ const Form = ({addActivity}) => {
     <div>
       <h2>Add an activity</h2>
       <form onSubmit={handleSubmit}>
-        <label>Activity Name</label>
-        <input type='text' id='name' name='name' value={name} onChange={handleName} /><br />
-        <label>Trip</label>
-        <input type='text' id='trip' name='trip' value={trip} onChange={handleTrip} /><br />
-        <label>Location</label>
-        <input type='text' id='location' name='location' value={location} onChange={handleLocation} /><br />
-        <label>Comment</label>
-        <textarea id='comment' name='comment' value={comment} onChange={handleComment} /><br />
+        <label>Activity Name</label><br />
+        <input type='text' id='name' name='name' value={name} onChange={handleName} required /><br />
+        <label>Trip</label><br />
+        <input type='text' id='trip' name='trip' value={trip} onChange={handleTrip} required /><br />
+        <label>Location</label><br />
+        <input type='text' id='location' name='location' value={location} onChange={handleLocation} required /><br />
+        <label>Comment</label><br />
+        <textarea id='comment' name='comment' value={comment} onChange={handleComment} required /><br />
         <input type='submit'/>
       </form>
     </div>

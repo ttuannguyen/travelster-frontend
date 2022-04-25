@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 const App = () => {
 
   const [activities, setActivities] = useState([]);
+  const [quote, setQuote] = useState([]);
+
   const url = 'http://localhost:3000/data';
   
   
@@ -22,17 +24,28 @@ const App = () => {
       {setActivities(data)}}   
   )}, [])
 
+  // useEffect(() => {
+  //   fetch('https://www.boredapi.com/api/activity/')
+  //   .then(res => res.json())
+  //   .then(json => {
+  //     console.log(json)
+  //     setQuote(json)
+  //   })
+  // }, [])
+
+
+
   const addActivity = (newActivity) => {
-    console.log(newActivity)
+    //console.log(newActivity)
     setActivities(activities => [...activities, newActivity])
   }
 
   return (
     <Router>
-      <h1>Phase 2 Project</h1>
+      <h1>Travel Planning App</h1>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <Home />} />
+        <Route path="/" element={ <Home quote={quote} />} />
         <Route exact path="/activities" element={ <Activities activities={activities} />} />
         <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
       </Routes>

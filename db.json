@@ -23,6 +23,14 @@
       "comment": "stop by an ATM to get cash",
       "likes": 1,
       "id": 3
+    },
+    {
+      "name": "test",
+      "trip": "test",
+      "location": "test",
+      "comment": "test",
+      "likes": 1,
+      "id": 4
     }
   ]
 }
