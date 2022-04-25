@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Activity = ({activity}) => {
   return (
     <div>
@@ -7,9 +8,9 @@ const Activity = ({activity}) => {
       <h4>Trip: {activity.trip}</h4>
       <h4>Location: {activity.location}</h4>
       <p>Comment: {activity.comment}</p>
-      <p>Likes: {activity.likes}</p>
     </div>
   )
 }
+
 
 export default Activity

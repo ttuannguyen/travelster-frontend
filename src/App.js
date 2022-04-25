@@ -13,7 +13,7 @@ const App = () => {
   const [activities, setActivities] = useState([]);
   const [quote, setQuote] = useState([]);
 
-  const url = 'http://localhost:3000/data';
+  const url = 'http://localhost:3001/data';
   
   
   useEffect(() => {
@@ -21,17 +21,15 @@ const App = () => {
     .then(res => res.json())
     .then(data => {
       //console.log(data)
-      {setActivities(data)}}   
-  )}, [])
-
-  // useEffect(() => {
-  //   fetch('https://www.boredapi.com/api/activity/')
-  //   .then(res => res.json())
-  //   .then(json => {
-  //     console.log(json)
-  //     setQuote(json)
-  //   })
-  // }, [])
+      setActivities(data)}    
+    )
+    fetch('https://www.boredapi.com/api/activity/')
+    .then(res => res.json())
+    .then(json => {
+      console.log(json)
+      setQuote(json)
+    })
+  }, [])
 
 
 
@@ -45,13 +43,17 @@ const App = () => {
       <h1>Travel Planning App</h1>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <Home quote={quote} />} />
+        <Route exact path="/" element={ <Home quote={quote} />} />
         <Route exact path="/activities" element={ <Activities activities={activities} />} />
         <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
+        {/* <Route path="/activities/:id" element={ <Activities activities={activities} />} /> */}
       </Routes>
     </Router>
 
   );
 }
+
+//note: add a like button to increment likes
+
 
 export default App;

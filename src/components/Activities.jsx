@@ -16,4 +16,7 @@ const Activities = ({ activities }) => {
   )
 }
 
+//idea: dynamic routing for each activity
+
+
 export default Activities
