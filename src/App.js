@@ -31,11 +31,13 @@ const App = () => {
     })
   }, [])
 
-
-
   const addActivity = (newActivity) => {
     //console.log(newActivity)
     setActivities(activities => [...activities, newActivity])
+  }
+
+  const handleUpdateLikes = () => {
+    console.log("the data was sent up")
   }
 
   return (
@@ -44,7 +46,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={ <Home quote={quote} />} />
-        <Route exact path="/activities" element={ <Activities activities={activities} />} />
+        <Route exact path="/activities" element={ <Activities activities={activities} handleUpdateLikes={handleUpdateLikes}/>} />
         <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
         {/* <Route path="/activities/:id" element={ <Activities activities={activities} />} /> */}
       </Routes>
