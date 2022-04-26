@@ -16,7 +16,7 @@ const Likes = ({activity, handleUpdateLikes}) => {
         })
         .then(res => res.json())
         .then(json => {
-            handleUpdateLikes()
+            handleUpdateLikes(json)
         })
 
     }

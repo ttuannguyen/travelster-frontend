@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 // import './App.css';
-//import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./components/Navbar";
@@ -36,8 +35,12 @@ const App = () => {
     setActivities(activities => [...activities, newActivity])
   }
 
-  const handleUpdateLikes = () => {
-    console.log("the data was sent up")
+  const handleUpdateLikes = (updatedLikes) => {
+    //console.log(updatedLikes)
+    const activitiesWithUpdatedLikes = activities.map(activity => {
+      return activity.id === updatedLikes.id ? updatedLikes : activity
+    });
+    setActivities(activitiesWithUpdatedLikes)
   }
 
   return (
@@ -54,8 +57,6 @@ const App = () => {
 
   );
 }
-
-//note: add a like button to increment likes
 
 
 export default App;
