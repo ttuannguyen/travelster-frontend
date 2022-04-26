@@ -26,7 +26,7 @@ const App = () => {
     fetch('https://www.boredapi.com/api/activity/')
     .then(res => res.json())
     .then(json => {
-      console.log(json)
+      //console.log(json)
       setQuote(json)
     })
   }, [])
