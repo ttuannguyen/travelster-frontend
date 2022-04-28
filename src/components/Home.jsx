@@ -8,10 +8,7 @@ const Home = ({quote}) => {
         <h4>Would you rather stay in town and...</h4>
         <h4>1) {quote.activity}</h4>
         <h4>Or</h4>
-        <h4>2) <Link style={{ textDecoration: 'none' }} to="/activities">Travel</Link> ?</h4>
-        
-  
-        
+        <h4>2) <Link style={{ textDecoration: 'none' }} to="/activities">Travel</Link> ?</h4>        
     </div>
   )
 }

@@ -5,7 +5,7 @@
       "trip": "Spring Break 2022",
       "location": "Centro Histórico, Mexico City",
       "comment": "stop by Chinatown and the taco stands",
-      "likes": 8,
+      "likes": 9,
       "id": 1
     },
     {
@@ -21,7 +21,7 @@
       "trip": "Spring Break 2022",
       "location": "Zona Rosa, Mexico City",
       "comment": "stop by an ATM to get cash",
-      "likes": 6,
+      "likes": 7,
       "id": 3
     },
     {
@@ -29,7 +29,7 @@
       "trip": "Christmas 2022",
       "location": "San Francisco",
       "comment": "Take the N train.",
-      "likes": 5,
+      "likes": 7,
       "id": 4
     },
     {

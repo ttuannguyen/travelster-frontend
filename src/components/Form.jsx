@@ -29,6 +29,13 @@ const Form = ({addActivity}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //reset the form after clicking submit
+    setName('');
+    setTrip('');
+    setLocation('');
+    setComment('');
+
+
     let obj = { 
       name,
       trip,
