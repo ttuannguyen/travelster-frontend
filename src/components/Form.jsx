@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const Form = ({addActivity}) => {
 
-  const url = 'http://localhost:3000/data';
+  const url = 'http://localhost:3001/data';
   //const [activity, setActivity] = useState('');
   const [name, setName] = useState('');
   const [trip, setTrip] = useState('');
@@ -36,7 +36,7 @@ const Form = ({addActivity}) => {
       comment,
       likes: 1
     }
-    console.log(obj)
+    //console.log(obj)
 
     fetch(url, {
       method: 'POST', 
@@ -47,15 +47,15 @@ const Form = ({addActivity}) => {
     })
     .then(res => res.json())
     .then(newActivity => {
-      console.log(newActivity)
+      //console.log(newActivity)
       addActivity(newActivity)
     })
   }
 
 
   return (
-    <div>
-      <h2>Add an activity</h2>
+    <div id="form">
+      <h2>Add an activity!</h2>
       <form onSubmit={handleSubmit}>
         <label>Activity Name</label><br />
         <input type='text' id='name' name='name' value={name} onChange={handleName} required /><br />

@@ -15,15 +15,13 @@ const Likes = ({activity, handleUpdateLikes}) => {
             body: JSON.stringify(obj)
         })
         .then(res => res.json())
-        .then(json => {
-            handleUpdateLikes(json)
-        })
+        .then(json => handleUpdateLikes(json))
 
     }
     
     return (
         <span>
-            <button className="like-btn" onClick={handleLikeClick}>Likes</button>
+            <button className="like-btn" style={{ marginRight: "5px" }} onClick={handleLikeClick}>Likes</button>
             {activity.likes}
         </span>
     )

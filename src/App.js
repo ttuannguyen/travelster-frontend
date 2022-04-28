@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Activities from "./components/Activities";
 import Form from "./components/Form";
@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <Router>
-      <h1>Travel Planning App</h1>
+        <h1>Travelster</h1>
       <Navbar />
       <Routes>
         <Route exact path="/" element={ <Home quote={quote} />} />

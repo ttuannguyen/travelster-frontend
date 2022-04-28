@@ -5,7 +5,7 @@
       "trip": "Spring Break 2022",
       "location": "Centro Histórico, Mexico City",
       "comment": "stop by Chinatown and the taco stands",
-      "likes": 22,
+      "likes": 8,
       "id": 1
     },
     {
@@ -13,7 +13,7 @@
       "trip": "Spring Break 2022",
       "location": "Roma Norte, Mexico City",
       "comment": "contact the host to book the tour",
-      "likes": 20,
+      "likes": 7,
       "id": 2
     },
     {
@@ -21,8 +21,24 @@
       "trip": "Spring Break 2022",
       "location": "Zona Rosa, Mexico City",
       "comment": "stop by an ATM to get cash",
-      "likes": 19,
+      "likes": 6,
       "id": 3
+    },
+    {
+      "name": "go to the Golden Gate Park",
+      "trip": "Christmas 2022",
+      "location": "San Francisco",
+      "comment": "Take the N train.",
+      "likes": 5,
+      "id": 4
+    },
+    {
+      "name": "test",
+      "trip": "test",
+      "location": "test",
+      "comment": "test",
+      "likes": 1,
+      "id": 5
     }
   ]
 }

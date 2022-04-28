@@ -1,6 +1,5 @@
-import React from 'react'
-import Activity from './Activity'
-
+import React from 'react';
+import Activity from './Activity';
 
 
 const Activities = ({activities, handleUpdateLikes}) => {
@@ -9,8 +8,7 @@ const Activities = ({activities, handleUpdateLikes}) => {
   //console.log(allActivities)
 
   return (
-    <div>
-      <h2>All Activities</h2>
+    <div id="activities-container">
       {allActivities}
     </div>
   )

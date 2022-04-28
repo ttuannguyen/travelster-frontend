@@ -5,10 +5,10 @@ import Likes from './Likes'
 const Activity = ({activity, handleUpdateLikes}) => {
 
   return (
-    <div>
-      <h2>{activity.name}</h2>
-      <h4>Trip: {activity.trip}</h4>
-      <h4>Location: {activity.location}</h4>
+    <div className="activity-card">
+      <h4>{activity.name}</h4>
+      <h5>Trip: {activity.trip}</h5>
+      <p>Location: {activity.location}</p>
       <p>Comment: {activity.comment}</p>
       <Likes activity={activity} handleUpdateLikes={handleUpdateLikes}/>
     </div>
