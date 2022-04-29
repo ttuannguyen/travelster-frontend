@@ -37,7 +37,6 @@
       "trip": "test",
       "location": "test",
       "comment": "test",
-      "likes": 1,
       "id": 5
     }
   ]

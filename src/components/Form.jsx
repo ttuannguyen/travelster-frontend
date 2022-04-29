@@ -3,46 +3,68 @@ import React, {useState} from 'react';
 const Form = ({addActivity}) => {
 
   const url = 'http://localhost:3001/data';
+  
   //const [activity, setActivity] = useState('');
-  const [name, setName] = useState('');
-  const [trip, setTrip] = useState('');
-  const [location, setLocation] = useState('');
-  const [comment, setComment] = useState('');
+  // const [name, setName] = useState('');
+  // const [trip, setTrip] = useState('');
+  // const [location, setLocation] = useState('');
+  // const [comment, setComment] = useState('');
 
-  const handleName = (e) => {
-    //console.log(e.target.value)
-    setName(e.target.value)
+  //refactor by combing all states into a single state object
+  const [formData, setFormData] = useState({
+    name:'',
+    trip:'',
+    location:'',
+    comment:'',
+    likes: 1
+  })
+
+
+  // const handleName = (e) => {
+  //   //console.log(e.target.value)
+  //   setName(e.target.value)
+  // }
+  // const handleTrip = (e) => {
+  //   setTrip(e.target.value)
+  // }
+  // const handleLocation = (e) => {
+  //   setLocation(e.target.value)
+  // }
+  // const handleComment = (e) => {
+  //   setComment(e.target.value)
+  // }
+
+  //refactor by combing all handlers into a one
+  const handleChange = (e) => {
+    setFormData(formData => {
+      return {...formData, [e.target.name]:e.target.value}
+    })
   }
 
-  const handleTrip = (e) => {
-    setTrip(e.target.value)
-  }
-
-  const handleLocation = (e) => {
-    setLocation(e.target.value)
-  }
-
-  const handleComment = (e) => {
-    setComment(e.target.value)
-  }
    
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData({
+      name:'',
+      trip:'',
+      location:'',
+      comment:'',
+    });
 
     //reset the form after clicking submit
-    setName('');
-    setTrip('');
-    setLocation('');
-    setComment('');
+    // setName('');
+    // setTrip('');
+    // setLocation('');
+    // setComment('');
 
 
-    let obj = { 
-      name,
-      trip,
-      location,
-      comment,
-      likes: 1
-    }
+    // let obj = { 
+    //   name,
+    //   trip,
+    //   location,
+    //   comment,
+    //   likes: 1
+    // }
     //console.log(obj)
 
     fetch(url, {
@@ -50,7 +72,7 @@ const Form = ({addActivity}) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(obj),
+      body: JSON.stringify(formData),
     })
     .then(res => res.json())
     .then(newActivity => {
@@ -65,13 +87,13 @@ const Form = ({addActivity}) => {
       <h2>Add an activity!</h2>
       <form onSubmit={handleSubmit}>
         <label>Activity Name</label><br />
-        <input type='text' id='name' name='name' value={name} onChange={handleName} required /><br />
+        <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} required /><br />
         <label>Trip</label><br />
-        <input type='text' id='trip' name='trip' value={trip} onChange={handleTrip} required /><br />
+        <input type='text' id='trip' name='trip' value={formData.trip} onChange={handleChange} required /><br />
         <label>Location</label><br />
-        <input type='text' id='location' name='location' value={location} onChange={handleLocation} required /><br />
+        <input type='text' id='location' name='location' value={formData.location} onChange={handleChange} required /><br />
         <label>Comment</label><br />
-        <textarea id='comment' name='comment' value={comment} onChange={handleComment} required /><br />
+        <textarea id='comment' name='comment' value={formData.comment} onChange={handleChange} required /><br />
         <input type='submit'/>
       </form>
     </div>
