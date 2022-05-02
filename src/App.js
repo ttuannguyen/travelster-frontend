@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Activities from "./components/Activities";
 import Form from "./components/Form";
 import { useEffect, useState } from "react";
+import ActivityDetail from './components/ActivityDetail';
 
 const App = () => {
 
@@ -43,15 +44,18 @@ const App = () => {
     setActivities(activitiesWithUpdatedLikes)
   }
 
+
+
+
   return (
     <Router>
         <h1>Travelster</h1>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={ <Home quote={quote} />} />
-        <Route exact path="/activities" element={ <Activities activities={activities} handleUpdateLikes={handleUpdateLikes}/>} />
         <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
-        {/* <Route path="/activities/:id" element={ <Activities activities={activities} />} /> */}
+        <Route path="/activities/:id" element={ <ActivityDetail />} />
+        <Route exact path="/activities" element={ <Activities activities={activities} handleUpdateLikes={handleUpdateLikes} />} />
+        <Route exact path="/" element={ <Home quote={quote} />} />
       </Routes>
     </Router>
 

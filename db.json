@@ -1,42 +1,48 @@
 {
   "data": [
     {
-      "name": "tour Historical District",
+      "image": "https://www.storiesbysoumya.com/wp-content/uploads/2021/07/mexico-city-center-cathedral-768x432.jpg",
+      "name": "tour Historic District",
       "trip": "Spring Break 2022",
       "location": "Centro Histórico, Mexico City",
       "comment": "stop by Chinatown and the taco stands",
-      "likes": 9,
+      "likes": 5,
       "id": 1
     },
     {
+      "image": "https://images.inmexico.com/2015/10/mezcal.jpg",
       "name": "attend the mezcal tasting tour",
       "trip": "Spring Break 2022",
       "location": "Roma Norte, Mexico City",
       "comment": "contact the host to book the tour",
-      "likes": 7,
+      "likes": 2,
       "id": 2
     },
     {
+      "image": "https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2015/12/56-3719522-1438195531200242d947264a2d97b15d581933550d.jpg",
       "name": "night out in Zona Rosa",
       "trip": "Spring Break 2022",
       "location": "Zona Rosa, Mexico City",
       "comment": "stop by an ATM to get cash",
-      "likes": 7,
+      "likes": 2,
       "id": 3
     },
     {
-      "name": "go to the Golden Gate Park",
-      "trip": "Christmas 2022",
-      "location": "San Francisco",
-      "comment": "Take the N train.",
-      "likes": 7,
+      "image": "https://cdn.vox-cdn.com/thumbor/3cUpazOvkCzoY4-w5r3LSuElzT0=/0x0:828x641/1520x1013/filters:focal(348x255:480x387):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66977509/101708094_1265178563823673_7732880924805071233_n.0.jpg",
+      "name": "taco street food adventure",
+      "trip": "Spring Break 2022",
+      "location": "Zona Rosa, Mexico City",
+      "comment": "try as many types as possible",
+      "likes": 2,
       "id": 4
     },
     {
-      "name": "test",
-      "trip": "test",
-      "location": "test",
-      "comment": "test",
+      "image": "https://cdn.britannica.com/68/170868-050-8DDE8263/Golden-Gate-Bridge-San-Francisco.jpg?w=690&h=388&c=crop",
+      "name": "go to the Golden Gate Bridge",
+      "trip": "Christmas 2022",
+      "location": "San Francisco, CA",
+      "comment": "Take the N train.",
+      "likes": 1,
       "id": 5
     }
   ]

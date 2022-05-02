@@ -2,15 +2,5 @@ h1 {
   text-align: center;
   background-color: beige;
   margin: auto;
-  padding: 3vh 6vw;
+  padding: 3vh 6vw; 
 }
-
-
-/* Nav bar */
-
-#root > div:nth-child(2) {
-  text-align: center;
-  padding-top: 1%;
-}
-
-
