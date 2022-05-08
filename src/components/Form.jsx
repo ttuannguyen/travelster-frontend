@@ -14,8 +14,10 @@ const Form = ({addActivity}) => {
   const [formData, setFormData] = useState({
     name:'',
     trip:'',
+    date: '',
     location:'',
     comment:'',
+    image: '',
     likes: 1
   })
 
@@ -47,8 +49,10 @@ const Form = ({addActivity}) => {
     setFormData({
       name:'',
       trip:'',
+      date:'',
       location:'',
       comment:'',
+      image:''
     });
 
     //reset the form after clicking submit
@@ -90,8 +94,12 @@ const Form = ({addActivity}) => {
         <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} required /><br />
         <label>Trip</label><br />
         <input type='text' id='trip' name='trip' value={formData.trip} onChange={handleChange} required /><br />
+        <label>Date</label><br />
+        <input type='text' id='date' name='date' value={formData.date} onChange={handleChange} required /><br />
         <label>Location</label><br />
         <input type='text' id='location' name='location' value={formData.location} onChange={handleChange} required /><br />
+        <label>Image</label><br />
+        <input type='text' id='image' name='image' value={formData.image} onChange={handleChange} required /><br />
         <label>Comment</label><br />
         <textarea id='comment' name='comment' value={formData.comment} onChange={handleChange} required /><br />
         <input type='submit'/>

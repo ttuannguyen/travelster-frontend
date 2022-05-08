@@ -13,13 +13,14 @@ const ActivityDetail = () => {
       .then(activity => setActivity(activity))
   }, [id]);
 
-  const { name, trip, location, comment, image } = activity;
+  const { name, trip, date, location, comment, image } = activity;
 
   return (
     <div className='activity-detail'>
       <img className='image' src={image} alt={name} />
       <h4 className='activity-name' >{name}</h4>
       <h5>Trip: {trip}</h5>
+      <p>Date: {date}</p>
       <p>Location: {location}</p>
       <p>Comment: {comment}</p>
   </div>

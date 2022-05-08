@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Travelster
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Inspired by my recent trip to Mexico City, I came up with the idea to build a travel planning tool. Using this app, a user can add a new activity with via a form, click on a like button, and navigate to each activity's page to view more details (date, location, comment, etc). 
+
+## Installation
+1. Go to the repo in Github, fork and clone it 
+2. Cd into the project folder and run yarn install 
+3. Run the server on port 3001 with command: json-server --watch db.json --port 3001
+4. Run the React server with yarn start 
+
 
 ## Available Scripts
 
@@ -69,6 +77,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### run server
-run server on port 3001 with command: json-server --watch db.json --port 3001
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

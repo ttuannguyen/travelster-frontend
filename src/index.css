@@ -14,6 +14,10 @@
   text-align: center;
 }
 
+.activity-detail {
+  text-align: center;
+  margin-top: 40px;
+}
 
 /* Containter for Activities*/
 #activities-container {
