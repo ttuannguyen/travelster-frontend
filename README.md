@@ -1,7 +1,7 @@
 # Travelster
 
 ## Description
-Inspired by my recent trip to Mexico City, I came up with the idea to build a travel planning tool. Using this app, a user can add a new activity with via a form, click on a like button, and navigate to each activity's page to view more details (date, location, comment, etc). 
+Inspired by my recent trip to Mexico City, I came up with the idea to build a travel planning tool. Using this app, a user can add a new activity with via a form, click on a like button, and navigate to each activity's page to view more details (date, location, comment, etc) to plan out the itinerary and agenda for their trip.. 
 
 ## Installation
 1. Go to the repo in Github, fork and clone it 
