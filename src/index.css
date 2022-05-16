@@ -1,8 +1,15 @@
 /* Nav Bar */
 
+
 #nav-bar {
   text-align: center;
   padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
 }
 
 
