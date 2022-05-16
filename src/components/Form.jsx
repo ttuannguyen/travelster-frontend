@@ -3,14 +3,7 @@ import React, {useState} from 'react';
 const Form = ({addActivity}) => {
 
   const url = 'http://localhost:3001/data';
-  
-  //const [activity, setActivity] = useState('');
-  // const [name, setName] = useState('');
-  // const [trip, setTrip] = useState('');
-  // const [location, setLocation] = useState('');
-  // const [comment, setComment] = useState('');
 
-  //refactor by combing all states into a single state object
   const [formData, setFormData] = useState({
     name:'',
     trip:'',
@@ -22,21 +15,7 @@ const Form = ({addActivity}) => {
   })
 
 
-  // const handleName = (e) => {
-  //   //console.log(e.target.value)
-  //   setName(e.target.value)
-  // }
-  // const handleTrip = (e) => {
-  //   setTrip(e.target.value)
-  // }
-  // const handleLocation = (e) => {
-  //   setLocation(e.target.value)
-  // }
-  // const handleComment = (e) => {
-  //   setComment(e.target.value)
-  // }
 
-  //refactor by combing all handlers into a one
   const handleChange = (e) => {
     setFormData(formData => {
       return {...formData, [e.target.name]:e.target.value}
@@ -46,6 +25,7 @@ const Form = ({addActivity}) => {
    
   const handleSubmit = (e) => {
     e.preventDefault();
+    //reset form
     setFormData({
       name:'',
       trip:'',
@@ -55,21 +35,7 @@ const Form = ({addActivity}) => {
       image:''
     });
 
-    //reset the form after clicking submit
-    // setName('');
-    // setTrip('');
-    // setLocation('');
-    // setComment('');
 
-
-    // let obj = { 
-    //   name,
-    //   trip,
-    //   location,
-    //   comment,
-    //   likes: 1
-    // }
-    //console.log(obj)
 
     fetch(url, {
       method: 'POST', 
@@ -80,7 +46,6 @@ const Form = ({addActivity}) => {
     })
     .then(res => res.json())
     .then(newActivity => {
-      //console.log(newActivity)
       addActivity(newActivity)
     })
   }

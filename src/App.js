@@ -20,31 +20,25 @@ const App = () => {
     fetch(url)
     .then(res => res.json())
     .then(data => {
-      //console.log(data)
       setActivities(data)}    
     )
     fetch('https://www.boredapi.com/api/activity/')
     .then(res => res.json())
     .then(json => {
-      //console.log(json)
       setQuote(json)
     })
   }, [])
 
   const addActivity = (newActivity) => {
-    //console.log(newActivity)
     setActivities(activities => [...activities, newActivity])
   }
 
   const handleUpdateLikes = (updatedLikes) => {
-    //console.log(updatedLikes)
     const activitiesWithUpdatedLikes = activities.map(activity => {
       return activity.id === updatedLikes.id ? updatedLikes : activity
     });
     setActivities(activitiesWithUpdatedLikes)
   }
-
-
 
 
   return (
