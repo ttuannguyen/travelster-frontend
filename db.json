@@ -7,7 +7,7 @@
       "date": "3/31/2022",
       "location": "Centro Histórico, Mexico City",
       "comment": "stop by Chinatown and the taco stands",
-      "likes": 16,
+      "likes": 23,
       "id": 1
     },
     {
@@ -17,7 +17,7 @@
       "date": "4/1/2022",
       "location": "Juárez, Mexico City",
       "comment": "contact the host to book the tour",
-      "likes": 14,
+      "likes": 20,
       "id": 2
     },
     {
@@ -27,7 +27,7 @@
       "date": "4/2/2022",
       "location": "Zona Rosa, Mexico City",
       "comment": "stop by an ATM to get cash",
-      "likes": 6,
+      "likes": 16,
       "id": 3
     },
     {
@@ -37,7 +37,7 @@
       "date": "4/3/2022",
       "location": "Doctores, Mexico City",
       "comment": "try as many types as possible",
-      "likes": 3,
+      "likes": 5,
       "id": 4
     },
     {
@@ -47,7 +47,7 @@
       "date": "12/28/2022",
       "location": "San Francisco, CA",
       "comment": "Take bus #28",
-      "likes": 3,
+      "likes": 6,
       "id": 5
     },
     {
@@ -57,7 +57,7 @@
       "location": "Balboa Park, San Diego",
       "comment": "Check for tickets online",
       "image": "https://media.cnn.com/api/v1/images/stellar/prod/210111163451-san-diego-zoo-file-restricted.jpg?q=x_3,y_156,h_1684,w_2993,c_crop/h_540,w_960",
-      "likes": 1,
+      "likes": 14,
       "id": 6
     }
   ]

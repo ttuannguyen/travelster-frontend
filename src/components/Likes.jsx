@@ -5,7 +5,6 @@ const Likes = ({activity, handleUpdateLikes}) => {
 
     const handleLikeClick = () => {
         const obj = {likes: activity.likes + 1};
-        //console.log(obj)
 
         fetch(`http://localhost:3001/data/${activity.id}`, {
             method: 'PATCH',

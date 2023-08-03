@@ -13,6 +13,8 @@ const Form = ({addActivity}) => {
     image: '',
     likes: 1
   })
+  //controlled component
+
 
 
 

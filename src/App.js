@@ -7,6 +7,7 @@ import Activities from "./components/Activities";
 import Form from "./components/Form";
 import { useEffect, useState } from "react";
 import ActivityDetail from './components/ActivityDetail';
+import ClickMe from './components/ClickMe';
 
 const App = () => {
 
@@ -45,6 +46,7 @@ const App = () => {
     <Router>
         <h1>Travelster</h1>
       <Navbar />
+      {/* <ClickMe /> */}
       <Routes>
         <Route exact path="/activities/new" element={ <Form addActivity={addActivity} />} />
         <Route path="/activities/:id" element={ <ActivityDetail />} />
